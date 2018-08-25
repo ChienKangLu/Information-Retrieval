@@ -48,8 +48,9 @@ We calculate **term frequency (tf)** and **inverse document frequency (idf)** fo
 + **term frequency (tf)**: More frequent terms in a document are more important,<br/>
 
   <p align="center">
-  <a src="https://latex.codecogs.com/svg.latex?f_i_j%20%3D%20%24%20frequency%20of%20term%20%24%20i%20%24%20in%20document%20%24%20j" />
+  <img src="https://latex.codecogs.com/svg.latex?f_i_j%20%3D%20%24%20frequency%20of%20term%20%24%20i%20%24%20in%20document%20%24%20j" />
   </p>
+  
   normalize term frequency in the document,<br/>
   <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?tf_i_j%20%3D%20f_i_j/max_i%5C%7B%7Bf_i_j%7D%5C%7D" />
