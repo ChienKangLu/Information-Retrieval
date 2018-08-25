@@ -46,6 +46,7 @@ We can still get these three documents but the **hit** is only one for each docu
 ## Vector Space Model
 We calculate **term frequency (tf)** and **inverse document frequency (idf)** for each bigram first.
 + **term frequency (tf)**: More frequent terms in a document are more important,<br/>
+
   <p align="center">
   <a src="https://latex.codecogs.com/svg.latex?f_i_j%20%3D%20%24%20frequency%20of%20term%20%24%20i%20%24%20in%20document%20%24%20j" />
   </p>
