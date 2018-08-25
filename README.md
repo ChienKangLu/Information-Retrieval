@@ -68,12 +68,25 @@ We calculate **term frequency (tf)** and **inverse document frequency (idf)** fo
   <img src="https://latex.codecogs.com/svg.latex?CosSim%28%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%2C%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%29%3D%5Cfrac%7B%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%5Ccdot%20%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%7D%7B%20%5Cleft%20%7C%20%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%20%5Cright%20%7C%20%5Ccdot%20%5Cleft%20%7C%20%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%20%5Cright%20%7C%7D%3D%5Cfrac%7B%5Csum_%7Bi%3D1%7D%5E%7Bt%7D%28w_i_j%5Ccdot%20w_i_q%29%7D%7B%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bt%7Dw_i_j%5E2%5Ccdot%20%5Csum_%7Bi%3D1%7D%5E%7Bt%7Dw_i_q%5E2%7D%7D" />
   </p>
   
-Calculate the tf and idf for query term
+Calculate the tf and idf for query term,
+<p align="center">
+  <img src="https://github.com/ChienKangLu/Information-Retrieval/blob/master/Vector%20Space%20Model_example/vector%20space%20model_example1.png" />
+</p>
 
 + Advantage
-  + It may find better document corresponding to the query because it use the sentence as unit
+  + Based on mathematics
+  + Consider both local and global information
+  + Ranking
+  + Fast
 + Drawback
-  + It is so strict that it can not find any documents
+  + Lack of semantic
+  
+## Conclusion
+1. Standard Boolean Model can find documents which are exactly match the query but the query need to be well designed.
+2. Extended Boolean Model is more precise than Standard Boolean Model because it is base on sentence.
+3. Vector Space Model is more intuitive to use because it can find the documents without designing the boolean query.
+4. The top ranking documents in Vector Space Model always the documents we want.
+
 
 
   
