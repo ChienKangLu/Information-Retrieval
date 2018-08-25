@@ -46,11 +46,14 @@ We can still get these three documents but the **hit** is only one for each docu
 ## Vector Space Model
 We calculate **term frequency (tf)** and **inverse document frequency (idf)** for each bigram first.
 + **term frequency (tf)**: More frequent terms in a document are more important,<br/>
-  ![image](https://latex.codecogs.com/svg.latex?f_i_j%20%3D%20%24%20frequency%20of%20term%20%24%20i%20%24%20in%20document%20%24%20j)
-  <br/>
+  <p align="center">
+  <a src="https://latex.codecogs.com/svg.latex?f_i_j%20%3D%20%24%20frequency%20of%20term%20%24%20i%20%24%20in%20document%20%24%20j" />
+  </p>
   normalize term frequency in the document,<br/>
-  ![image](https://latex.codecogs.com/svg.latex?tf_i_j%20%3D%20f_i_j/max_i%5C%7B%7Bf_i_j%7D%5C%7D)
-+ **inverse document frequency (idf)**: Terms that appear in many different documents are less indicative overall topic,<br>
+  <p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?tf_i_j%20%3D%20f_i_j/max_i%5C%7B%7Bf_i_j%7D%5C%7D" />
+  </p>
++ **inverse document frequency (idf)**: Terms that appear in many different documents are less indicative overall topic,<br><br/>
   ![image](https://latex.codecogs.com/svg.latex?%5Cbegin%7Bmatrix%7D%20df_i%26%20%3D%26%24document%20frequency%20of%20term%20%24i%20%5C%5C%20%26%20%3D%26%20%24numberof%20documents%20containing%20term%20%24i%20%5Cend%7Bmatrix%7D)
   
 
