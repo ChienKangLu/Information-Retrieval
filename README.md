@@ -44,7 +44,7 @@ We can still get these three documents but the **hit** is only one for each docu
   + It is so strict that it can not find any documents
 
 ## Vector Space Model
-We calculate **term frequency (tf)** and **inverse document frequency (idf)** for each bigram first.
+We calculate **term frequency (tf)** and **inverse document frequency (idf)** for each bigram first. Next, we wull calculate the **tf-idf weighting**.
 + **term frequency (tf)**: More frequent terms in a document are more important,<br/>
 
   <p align="center">
@@ -59,6 +59,11 @@ We calculate **term frequency (tf)** and **inverse document frequency (idf)** fo
   <img src="https://latex.codecogs.com/svg.latex?%5Cbegin%7Bmatrix%7D%20df_i%26%20%3D%26%24document%20frequency%20of%20term%20%24i%20%5C%5C%20%26%20%3D%26%20%24numberof%20documents%20containing%20term%20%24i%20%5C%5C%20idf_i%20%26%20%3D%20%26%20%24inverse%20document%20frequency%20of%20term%20%24%20i%20%5C%5C%20%26%20%3D%20%26%20log_2%5C%28N/df_i%5C%29%20%5Cend%7Bmatrix%7D" />
   </p>
   Log is used to dampen the effect, *N* is total number of documents.
++ **tf-idf weighting**: A term occurring frequently in the document but rarly in the rest of documents is given high score,
+  <p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?w_i_j%3Dtf_i_j%20idf_i%20%3D%20tf_i_jlog_2%5C%28N/df_i%20%5C%29" />
+  </p>
+
   
   
 
