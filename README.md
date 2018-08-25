@@ -87,6 +87,9 @@ Calculate the tf and idf for query term,
 3. Vector Space Model is more intuitive to use because it can find the documents without designing the boolean query.
 4. The top ranking documents in Vector Space Model always the documents we want.
 
+## Reference
+[Information retrieval course of information management in Soochow University]
+
 
 
   
