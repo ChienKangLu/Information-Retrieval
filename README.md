@@ -67,6 +67,9 @@ We calculate **term frequency (tf)** and **inverse document frequency (idf)** fo
   <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?CosSim%28%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%2C%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%29%3D%5Cfrac%7B%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%5Ccdot%20%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%7D%7B%20%5Cleft%20%7C%20%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%20%5Cright%20%7C%20%5Ccdot%20%5Cleft%20%7C%20%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%20%5Cright%20%7C%7D%3D%5Cfrac%7B%5Csum_%7Bi%3D1%7D%5E%7Bt%7D%28w_i_j%5Ccdot%20w_i_q%29%7D%7B%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bt%7Dw_i_j%5E2%5Ccdot%20%5Csum_%7Bi%3D1%7D%5E%7Bt%7Dw_i_q%5E2%7D%7D" />
   </p>
+  
+Calculate the tf and idf for query term
+
 + Advantage
   + It may find better document corresponding to the query because it use the sentence as unit
 + Drawback
