@@ -44,7 +44,7 @@ We can still get these three documents but the **hit** is only one for each docu
   + It is so strict that it can not find any documents
 
 ## Vector Space Model
-We calculate **term frequency (tf)** and **inverse document frequency (idf)** for each bigram first. Next, we wull calculate the **tf-idf weighting**.
+We calculate **term frequency (tf)** and **inverse document frequency (idf)** for each bigram first. Next, we wull calculate the **tf-idf weighting**. Finally, all documents and the query are transformed into weighted term vectors and we can use **cosine similarity** to measure how similar they are.
 + **term frequency (tf)**: More frequent terms in a document are more important,<br/>
 
   <p align="center">
@@ -63,6 +63,15 @@ We calculate **term frequency (tf)** and **inverse document frequency (idf)** fo
   <p align="center">
   <img src="https://latex.codecogs.com/svg.latex?w_i_j%3Dtf_i_j%20idf_i%20%3D%20tf_i_jlog_2%5C%28N/df_i%20%5C%29" />
   </p>
++ **cosine similarity measure**: Use angle between two vectors to measure their similarity
+  <p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?CosSim%28%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%2C%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%29%3D%5Cfrac%7B%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%5Ccdot%20%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%7D%7B%20%5Cleft%20%7C%20%5Ctextbf%7B%5Ctextit%7Bd%7D%7D_%5Ctextbf%7B%5Ctextit%7Bj%7D%7D%20%5Cright%20%7C%20%5Ccdot%20%5Cleft%20%7C%20%5Ctextbf%7B%5Ctextit%7Bq%7D%7D%20%5Cright%20%7C%7D%3D%5Cfrac%7B%5Csum_%7Bi%3D1%7D%5E%7Bt%7D%28w_i_j%5Ccdot%20w_i_q%29%7D%7B%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5E%7Bt%7Dw_i_j%5E2%5Ccdot%20%5Csum_%7Bi%3D1%7D%5E%7Bt%7Dw_i_q%5E2%7D%7D" />
+  </p>
++ Advantage
+  + It may find better document corresponding to the query because it use the sentence as unit
++ Drawback
+  + It is so strict that it can not find any documents
+
 
   
   
