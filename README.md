@@ -1,6 +1,9 @@
 # Information-retrieval
 This is my final project of **information retrieval** in college. In this project, we have already compared **Standard Boolean Model**, **Extended Boolean Model** and **Vector Space Model** for the task of searching chinese keywords and listed the advantage and drawback respectively.
 
+## Develop tools and techniques
++ Visual FoxPro
+
 ## Standard Boolean Model
 If we use this query to search documents,
 ```
